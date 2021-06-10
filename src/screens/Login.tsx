@@ -93,7 +93,7 @@ function Login() {
     <AuthLayout>
       <PageTitle title="Login" />
       <FormBox>
-        <Logo />
+        <Logo size="3x" />
         <div>
           <Title>Nomad Coffee Shop</Title>
         </div>

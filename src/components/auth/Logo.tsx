@@ -6,10 +6,10 @@ const SLogo = styled.div`
   color: ${(props) => props.theme.accent}
 `;
 
-function Logo() {
+function Logo(props: any) {
   return (
     <SLogo>
-      <FontAwesomeIcon icon={faCoffee} size="3x" />
+      <FontAwesomeIcon icon={faCoffee} { ...props } />
     </SLogo>
   )
 }

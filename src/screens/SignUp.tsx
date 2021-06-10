@@ -26,15 +26,13 @@ const Subtitle = styled(FatLink)`
 
 const CREATE_ACCOUNT_MUTATION = gql`
   mutation createAccount(
-    $firstName: String!
-    $lastName: String
+    $name: String!
     $username: String!
     $email: String!
     $password: String!
   ) {
     createAccount(
-      firstName: $firstName
-      lastName: $lastName
+      name: $name
       username: $username
       email: $email
       password: $password
@@ -84,7 +82,7 @@ function SingUp() {
         <HeaderContainer>
           <Logo />
           <Subtitle>
-            Sign up to see photos and videos from your friends.
+            Sign up to see nomad coffee shops from your friends.
           </Subtitle>
         </HeaderContainer>
         <form onSubmit={handleSubmit(onSubmitValid)}>
